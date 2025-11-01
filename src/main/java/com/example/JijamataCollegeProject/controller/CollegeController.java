@@ -48,8 +48,9 @@ public class CollegeController {
 
 	@GetMapping("/")
 	public String openPage() {
-		return "login";
+	    return "redirect:/login";
 	}
+
 
 	@PostMapping("/register")
 	public String register(College user, @RequestParam String email, @RequestParam String username) {
